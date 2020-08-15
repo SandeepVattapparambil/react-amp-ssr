@@ -3,6 +3,7 @@ let express = require("express");
 let path = require("path");
 let cookieParser = require("cookie-parser");
 let logger = require("morgan");
+let fs = require("fs");
 
 let indexRouter = require("./routes/index");
 let usersRouter = require("./routes/users");
@@ -10,6 +11,16 @@ let usersRouter = require("./routes/users");
 let app = express();
 
 // view engine setup
+// app.engine("jsh", function (filePath, options, callback) {
+//   // define the template engine
+//   fs.readFile(filePath, function (err, content) {
+//     if (err) return callback(err);
+//     // this is an extremely simple template engine
+//     let html = content.toString().replace("<% reactApp %>", options.reactApp);
+//     return callback(null, html);
+//   });
+// });
+
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
