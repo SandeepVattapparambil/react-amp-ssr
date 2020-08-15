@@ -50,3 +50,9 @@ app.use(function (err, req, res, next) {
 });
 
 module.exports = app;
+
+
+
+// https://dev.to/achhapolia10/implementing-server-side-rendering-using-react-and-express-22nh
+// https://expressjs.com/en/advanced/developing-template-engines.html
+// 
