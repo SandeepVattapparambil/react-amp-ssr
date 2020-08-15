@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "start-dev": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -15,7 +16,9 @@
   },
   "description": "A simple Server Side Rendered high performace AMP website",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
   "keywords": [
     "React",
     "SSR",
